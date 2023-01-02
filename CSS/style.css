@@ -220,6 +220,7 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
+         margin-top:12rem;
     }
     .header img{
         width: 100%;
