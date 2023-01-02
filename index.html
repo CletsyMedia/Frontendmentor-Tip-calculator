@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./CSS/all.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script defer async src="./Appjs/app.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo">
+  </header>
+
+  <main class="container">
+    <section class="left">
+      <div class="leftBox">
+        <div class="bill">
+          <label for="bill">Bill
+            <input type="number" name="bill" id="bill" placeholder="0">
+          </label>
+        </div>
+        <div class="allTips">
+          <label for="">Select tip %</label>
+        
+          <!--buttons and custom input  -->
+          <div class="tipInput">        
+            
+              <button class="tipPercent">5%</button>
+            
+            
+              <button class="tipPercent">10%</button>
+            
+            
+              <button class="tipPercent active default">15%</button>
+          
+            
+              <button class="tipPercent">25%</button>
+            
+            
+              <button class="tipPercent">50%</button>
+            
+  
+              <div class="customTip">
+                <input type="number" id="customTip" placeholder="Custom">
+              </div>
+          </div>
+        </div>
+        <!-- Number of people -->
+        <div class="bill bill-user">
+          <div class="warning">
+            <label for="people">Number of people
+              <span class="error"></span>
+              <input type="number" id="noOfPeople" placeholder="0"  > 
+            </label>
+          </div>
+        </div>
+        <!-- Number of people ends-->
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="rightBox">
+        <div class="tipsDetails">
+          <!-- Amount section -->
+          <div class="spaceBtw">
+            <div class="tipInfo">
+              <h4>Tip amount</h4>
+              <p>/ person</p>
+            </div>
+            <div class="tipAmt">
+              <div class="dollar"><img src="./images/icon-dollar.svg" alt="dollar-sign"></div>
+              <h1 id="tipAmt">0.00</h1>
+            </div>
+          </div>
+  
+          <!-- display amount -->
+            <div class="spaceBtw">
+              <div class="tipInfo">
+                <h4>Total</h4>
+                <p>/ person</p>
+              </div>
+              <div class="tipAmt">
+                <div class="dollar"><img src="./images/icon-dollar.svg" alt="dollar-sign"></div>
+                <h1 id="total">0.00</h1>            
+              </div>
+          </div>
+        </div>
+        <!-- button -->
+        <button type="reset" class="reset">Reset</button>
+    </section>
+  </main>
+
+
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">CletsyMedia</a>.
+  </div>
+  </footer>
+</body>
+</html>
